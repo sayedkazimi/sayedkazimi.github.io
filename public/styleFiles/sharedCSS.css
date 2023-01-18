@@ -1,0 +1,786 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.current {
+    background-color: green;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.txt-small {
+    font-size: 14px;
+}
+
+.txt-b {
+    font-weight: bold;
+}
+
+.ms-15 {
+    margin-left: 15px;
+}
+
+.ms-170 {
+    margin-left: 170px;
+}
+
+.ms-60 {
+    margin-left: 60px;
+}
+
+.ms-262 {
+    margin-left: 262px;
+}
+
+.ms-220 {
+    margin-left: 220px;
+}
+
+.ms-285 {
+    margin-left: 285px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+nav.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 17px;
+    background: black;
+}
+
+nav.main-nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 4px 3px;
+}
+
+nav.main-nav a:hover,
+nav.main-nav a:focus {
+    background: white;
+    color: blue;
+    text-shadow: rgb(0, 255, 13) 2px 2px 2px;
+    border-radius: 5px;
+}
+
+header.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    background: rgba(9, 9, 196, 0.712);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+header.main-header div.pContainer {
+    width: 80vw;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+header.main-header div.pContainer p {
+    position: relative;
+    height: 40px;
+    overflow: visible;
+    white-space: nowrap;
+}
+
+div#login-profile-name {
+    font-size: 15px;
+}
+
+div.login-logo {
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header.main-header button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+header.main-header button i {
+    font-size: 28px;
+}
+
+header.main-header button:hover,
+header.main-header button:focus {
+    background: white;
+    color: blue;
+}
+
+
+/* side bar of the website */
+
+section.aside-wrapper {
+    display: none;
+    position: fixed;
+    background-color: rgba(221, 221, 221, 0.493);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    overflow-y: scroll;
+}
+
+aside.main-aside {
+    display: flex;
+    flex-direction: column;
+    background: rgb(205, 205, 223);
+    padding: 19px;
+    width: 20vw;
+    float: right;
+    height: 100vh;
+}
+
+div#close-menu {
+    padding: 3px 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    width: 25px;
+    text-align: center;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+aside.main-aside section {
+    display: flex;
+    flex-direction: column;
+}
+
+aside.main-aside section p {
+    border-bottom: 1px green solid;
+}
+
+aside.main-aside a,
+aside.main-aside section a {
+    text-align: left;
+    text-decoration: none;
+    color: rgb(27, 13, 228);
+    margin-top: 11px;
+}
+
+
+/* section subscribe */
+
+section.subscribe-wrapper {
+    background: radial-gradient( circle at 46%, rgb(18, 18, 158), rgb(14, 121, 156), rgb(141, 118, 40), blue);
+}
+
+section.subscribe {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-left: 10vw;
+    padding: 19px 22px;
+}
+
+section.subscribe p {
+    margin-left: 15px;
+    font-size: 24px;
+    padding: 11px;
+    background-color: rgba(255, 255, 0, 0.26);
+    border-radius: 9px;
+    color: white;
+}
+
+section.subscribe input {
+    margin-left: 15px;
+    font-size: 23px;
+    padding: 11px;
+    border-radius: 9px;
+    border: green 1px solid;
+    outline: none;
+    width: 40vw;
+}
+
+section.subscribe button {
+    margin-left: 15px;
+    background-color: rgba(255, 1, 1, 0.726);
+    color: white;
+    font-size: 23px;
+    padding: 11px;
+    border-radius: 9px;
+    border: rgb(0, 19, 128) 1px solid;
+    outline: none;
+    cursor: pointer;
+}
+
+section.subscribe button:hover,
+section.subscribe button:focus {
+    background-color: rgb(0, 255, 255);
+}
+
+
+/* 
+		max width 390px
+*/
+
+@media (max-width: 390px) {
+    nav.main-nav a span {
+        display: none;
+    }
+
+    header.main-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        padding: 15px;
+        background: rgba(9, 9, 196, 0.712);
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    header.main-header div.pContainer {
+        height: 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        z-index: 2;
+    }
+    header.main-header div.pContainer p {
+        position: relative;
+        height: 25px;
+        z-index: 0;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: visible;
+    }
+    div#login-profile-name {
+        font-size: 11px;
+        z-index: 2;
+    }
+    div.login-logo {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header.main-header button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6vw;
+        color: white;
+        cursor: pointer;
+    }
+    header.main-header button i {
+        font-size: 28px;
+    }
+    header.main-header button:hover,
+    header.main-header button:focus {
+        background: white;
+        color: blue;
+    }
+    /* side bar of the website */
+    section.aside-wrapper {
+        display: none;
+        position: fixed;
+        background-color: rgba(221, 221, 221, 0.493);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+    aside.main-aside {
+        display: flex;
+        flex-direction: column;
+        background: rgb(205, 205, 223);
+        padding: 19px;
+        width: 37vw;
+        float: right;
+        height: 100vh;
+    }
+    /* section subscribe */
+    section.subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2px;
+        padding: 19px 5px;
+        width: 90vw;
+    }
+    section.subscribe p {
+        font-size: 12px;
+        padding: 5px;
+        background-color: rgba(255, 255, 0, 0.26);
+        border-radius: 9px;
+        color: white;
+    }
+    section.subscribe input {
+        margin-left: 13px;
+        font-size: 13px;
+        padding: 8px;
+        border-radius: 9px;
+        border: green 1px solid;
+        outline: none;
+        width: 30vw;
+    }
+    section.subscribe button {
+        margin-left: 13px;
+        background-color: rgba(255, 1, 1, 0.726);
+        color: white;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 9px;
+        border: rgb(0, 19, 128) 1px solid;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+
+/* 
+        MAX WIDTH 490PX
+*/
+
+@media (max-width: 490px) and (min-width: 390px) {
+    nav.main-nav a span {
+        display: none;
+    }
+    
+    header.main-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1vw;
+        background: rgba(9, 9, 196, 0.712);
+        color: white;
+        width: auto;
+    }
+    header.main-header div.pContainer {
+        width: 75vw;
+        height: 23px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header.main-header div.pContainer p {
+        position: relative;
+        overflow: visible;
+        white-space: nowrap;
+        z-index: 0;
+        height: 21px;
+        font-size: 16px;
+    }
+    div#login-profile-name {
+        font-size: 11px;
+    }
+    div.login-logo {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    header.main-header button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+        color: white;
+        z-index: 2;
+    }
+    header.main-header button i {
+        padding: 1px 2px;
+        font-size: 26px;
+        cursor: pointer;
+    }
+    header.main-header button:hover,
+    header.main-header button:focus {
+        background: white;
+        color: blue;
+    }
+    /* side bar of the website */
+    section.aside-wrapper {
+        display: none;
+        position: fixed;
+        background-color: rgba(221, 221, 221, 0.493);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        width: 100vw;
+        height: 100vh;
+    }
+    aside.main-aside {
+        display: flex;
+        flex-direction: column;
+        background: rgb(205, 205, 223);
+        padding: 19px;
+        width: 39vw;
+        float: right;
+        height: 100vh;
+    }
+    /* section subscribe */
+    section.subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2px;
+        padding: 19px 5px;
+        width: 90vw;
+    }
+    section.subscribe p {
+        font-size: 12px;
+        padding: 5px;
+        background-color: rgba(255, 255, 0, 0.26);
+        border-radius: 9px;
+        color: white;
+    }
+    section.subscribe input {
+        margin-left: 13px;
+        font-size: 13px;
+        padding: 8px;
+        border-radius: 9px;
+        border: green 1px solid;
+        outline: none;
+        width: 30vw;
+    }
+    section.subscribe button {
+        margin-left: 13px;
+        background-color: rgba(255, 1, 1, 0.726);
+        color: white;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 9px;
+        border: rgb(0, 19, 128) 1px solid;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+
+/* 
+        MAX WIDTH 670PX
+*/
+
+@media (max-width: 670px) and (min-width: 490px) {
+    
+    header.main-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1vw;
+        background: rgba(9, 9, 196, 0.712);
+        color: white;
+        width: auto;
+    }
+    header.main-header div.pContainer {
+        width: 77vw;
+        height: 23px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header.main-header div.pContainer p {
+        position: relative;
+        overflow: visible;
+        white-space: nowrap;
+        z-index: 0;
+        height: 21px;
+        font-size: 18px;
+    }
+    div#login-profile-name {
+        font-size: 11px;
+    }
+    div.login-logo {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    header.main-header button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 5vw;
+        color: white;
+        z-index: 2;
+    }
+    header.main-header button i {
+        padding: 1px 2px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    header.main-header button:hover,
+    header.main-header button:focus {
+        background: white;
+        color: blue;
+    }
+    /* side bar of the website */
+    section.aside-wrapper {
+        display: none;
+        position: fixed;
+        background-color: rgba(221, 221, 221, 0.493);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    aside.main-aside {
+        display: flex;
+        flex-direction: column;
+        background: rgb(205, 205, 223);
+        padding: 19px;
+        width: 39vw;
+        float: right;
+        height: 100vh;
+    }
+    /* section subscribe */
+    section.subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 2px;
+        padding: 19px 5px;
+        width: 90vw;
+    }
+    section.subscribe p {
+        font-size: 17px;
+        padding: 7px;
+        background-color: rgba(255, 255, 0, 0.26);
+        border-radius: 9px;
+        color: white;
+    }
+    section.subscribe input {
+        margin-left: 16px;
+        font-size: 17px;
+        padding: 9px;
+        border-radius: 9px;
+        border: green 1px solid;
+        outline: none;
+        width: 30vw;
+    }
+    section.subscribe button {
+        margin-left: 13px;
+        background-color: rgba(255, 1, 1, 0.726);
+        color: white;
+        font-size: 17px;
+        padding: 7px;
+        border-radius: 9px;
+        border: rgb(0, 19, 128) 1px solid;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+
+/* 
+        MAX WIDTH 890PX
+*/
+
+@media (max-width: 750px) and (min-width: 670px) {
+   
+    header.main-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1vw;
+        background: rgba(9, 9, 196, 0.712);
+        color: white;
+        width: auto;
+    }
+    header.main-header div.pContainer {
+        width: 79vw;
+        height: 23px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    header.main-header div.pContainer p {
+        position: relative;
+        height: 21px;
+        overflow: visible;
+        white-space: nowrap;
+        font-size: 19px;
+    }
+    div#login-profile-name {
+        font-size: 12px;
+    }
+    div.login-logo {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    header.main-header button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6vw;
+        color: white;
+        z-index: 2;
+    }
+    header.main-header button i {
+        padding: 1px 2px;
+        font-size: 29px;
+        cursor: pointer;
+    }
+    header.main-header button:hover,
+    header.main-header button:focus {
+        background: white;
+        color: blue;
+    }
+    /* side bar of the website */
+    section.aside-wrapper {
+        display: none;
+        position: fixed;
+        background-color: rgba(221, 221, 221, 0.493);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+    }
+    aside.main-aside {
+        display: flex;
+        flex-direction: column;
+        background: rgb(205, 205, 223);
+        padding: 19px;
+        width: 39vw;
+        float: right;
+        height: 100vh;
+    }
+    /* section subscribe */
+    section.subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 12px;
+        padding: 19px 5px;
+        width: 90vw;
+    }
+    section.subscribe p {
+        font-size: 20px;
+        padding: 9px;
+        background-color: rgba(255, 255, 0, 0.26);
+        border-radius: 9px;
+        color: white;
+    }
+    section.subscribe input {
+        margin-left: 16px;
+        font-size: 21px;
+        padding: 11px;
+        border-radius: 9px;
+        border: green 1px solid;
+        outline: none;
+        width: 30vw;
+    }
+    section.subscribe button {
+        margin-left: 16px;
+        background-color: rgba(255, 1, 1, 0.726);
+        color: white;
+        font-size: 20px;
+        padding: 9px;
+        border-radius: 9px;
+        border: rgb(0, 19, 128) 1px solid;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 980px) and (min-width: 750px) {
+    /* section subscribe */
+    section.subscribe {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 12px;
+        padding: 19px 5px;
+        width: 90vw;
+    }
+    section.subscribe p {
+        font-size: 20px;
+        padding: 9px;
+        background-color: rgba(255, 255, 0, 0.26);
+        border-radius: 9px;
+        color: white;
+    }
+    section.subscribe input {
+        margin-left: 16px;
+        font-size: 21px;
+        padding: 11px;
+        border-radius: 9px;
+        border: green 1px solid;
+        outline: none;
+        width: 30vw;
+    }
+    section.subscribe button {
+        margin-left: 16px;
+        background-color: rgba(255, 1, 1, 0.726);
+        color: white;
+        font-size: 20px;
+        padding: 9px;
+        border-radius: 9px;
+        border: rgb(0, 19, 128) 1px solid;
+        outline: none;
+        cursor: pointer;
+    }
+}

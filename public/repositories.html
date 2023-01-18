@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Cloud technology, IT, Web development, web hosting solution, business website for free" />
+    <meta name="description"
+        content="We provide you the best services in cloud technologies and another information Technologies" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" type="image/ico" href="../favicon .ico">
+    <link rel="shortcut icon" type="image/ico" href="../favicon .ico">
+    <link rel="stylesheet" href="./styleFiles/repositories.css">
+    <link rel="stylesheet" href="./styleFiles/footer.css">
+    <link rel="stylesheet" href="./styleFiles/sharedCSS.css">
+    <title>GitHub repositories</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="main-nav"></nav>
+    <!-- header -->
+    <header class="main-header">
+        <div class="pContainer">
+            <p id="welcome-paragraph">
+                Welcome! If you have any question or if something is not clear on this website, then please contact me
+                via Email, LinkedIn or GitHub. Thank You!
+            </p>
+        </div>
+        <button id="menu"><i class="material-icons">menu</i></button>
+    </header>
+
+    <!-- menu -->
+    <section class="aside-wrapper" id="aside-wrapper"> </section>
+    <!-- main part of the website -->
+    <main id="user-interface">
+        <section class="info-repo">
+            <h2 class="sec-hdr">Welcome to my GitHub repositories page</h2>
+            <hr>
+            <p>Because GitHub allows up to 30 API requests, you can see only your first 30 repositories.</p>
+            <p>You can search for anyone's repositories by entering his/her GitHub username in the input box below.
+            </p>
+        </section>
+        <!--  section repos  -->
+        <section class="input-section">
+            <div class="lbl">
+                <label for="github-username">Enter your GitHub username:</label>
+
+            </div>
+            <input type="text" value="sayedkazimi" id="github-username">
+            <input type="button" value="Submit" id="request-repos">
+        </section>
+        <section id="tableContainer"></section>
+    </main>
+
+
+    <!-- section for subscribe -->
+    <section class="EMF-container">
+        <p id="error-feedback"></p>
+    </section>
+    <section class="subscribe-wrapper">
+        <section class="subscribe">
+            <p>
+                SUBSCRIBE NOW
+            </p>
+            <input type="email" placeholder="example@gmail.com" id="userEmail">
+            <button id="subscribe">SUBMIT</button>
+        </section>
+    </section>
+    <!-- footer of the page -->
+    <footer class="footer main-footer"></footer>
+    <!-- load the js files -->
+    <script src="./apps/aside.js"></script>
+    <script src="./apps/render-repositories.js" type="module"></script>
+    <!-- <script src="./apps/subscribe.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Cloud technology, IT, Web development, web hosting solution, business website for free" />
+    <meta name="description"
+        content="We provide you the best services in cloud technologies and another information Technologies" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="icon" type="image/ico" href="./favicon .ico">
+    <link rel="shortcut icon" type="image/ico" href="./favicon .ico">
+    <link rel="stylesheet" href="./public/styleFiles/style.css">
+    <link rel="stylesheet" href="./public//styleFiles/footer.css">
+    <link rel="stylesheet" href="./public//styleFiles/sharedCSS.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="main-nav"></nav>
+
+    <!-- header -->
+    <header class="main-header">
+        <div class="pContainer">
+            <p id="welcome-paragraph">
+                Welcome! If you have any question or if something is not clear on this website, then please contact me
+                via Email, LinkedIn or GitHub. Thank You!
+            </p>
+        </div>
+        <button id="menu"><i class="material-icons">menu</i></button>
+    </header>
+
+    <!-- menu -->
+    <section class="aside-wrapper" id="aside-wrapper"></section>
+    <!-- transition & animation & transformation -->
+
+    <section class="showcase">
+        <!-- showcase -->
+        <section class="container-showcase">
+            <section class="transform-2d">
+                <h1>CSS<br>POWER!</h1>
+            </section>
+            <section class="transform-3d">
+                <div class="threed front">Change</div>
+                <div class="threed back">Work</div>
+                <div class="threed right">IT</div>
+                <div class="threed left">Techs</div>
+                <div class="threed top">Hard</div>
+                <div class="threed bottom">World</div>
+            </section>
+            <section class="transform-3d2">
+                <div class="threed2 one">EVERYDAY</div>
+                <div class="threed2 two">SMARTER</div>
+                <div class="threed2 three">CLEAN</div>
+                <div class="threed2 four">CODE</div>
+                <div class="threed2 five">HAPPY</div>
+                <div class="threed2 six">CODING!</div>
+            </section>
+        </section>
+    </section>
+    <!-- Math game -->
+    <section class="game-wrapper">
+        <section class="game-container">
+            <section class="score-box">
+                <p>SCORE</p>
+                <p id="score"></p>
+            </section>
+            <section class="game-console">
+                <section class="game-header">
+                    <p>A Small Math Game</p>
+                    <p>Please don't use any calculator. Calculate everything in your head. Try to find an easy way to
+                        calculate it fast. Be focused, this improves your concentrations. <span
+                            class="red-text">Important!</span> the answer is rounded to integer,
+                        so no decimal answer! Example: 1.4 = 1, 1.5 = 2, 1.8 = 2, ...</p>
+                </section>
+
+                <form class="math-form">
+                    <div class="container">
+                        <div><label for="level">Choose a LeveL</label></div>
+                        <select name="level" id="level">
+                            <option value="9" selected>Easy</option>
+                            <option value="99">Medium</option>
+                            <option value="999">Hard</option>
+                        </select>
+                    </div>
+                    <div class="container">
+                        <div><label for="operator">Choose an operator</label></div>
+                        <select name="operator" id="operator" title="When you select an operator, it will affect at the next
+						question!">
+                            <option value="mix" selected>mix</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">x</option>
+                            <option value="/">÷</option>
+                        </select>
+                    </div>
+                </form>
+                <section class="math-box">
+                    <section class="question-answer">
+                        <section class="question-box"></section>
+                        <section class="answer-box">
+                            <input type="number" id="user-answer" placeholder="Write your answer">
+                        </section>
+                    </section>
+                    <section class="check-answer">
+                        <button id="check-btn">CHECK</button>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="dis-error red-text">
+        <p id="show-error"></p>
+    </section>
+    <hr>
+    <!-- 3 ms in math -->
+    <section class="mean-median-mode">
+        <header>
+            <h4>Find the mean, median or mode of a series of numbers</h4>
+            <p>Choose the option you want and then enter the numbers separated by a comma.</p>
+        </header>
+        <section>
+            <div>
+                <label for="3ms-in-math">Choose an option</label>
+            </div>
+            <select name="subject" id="3ms-in-math">
+                <option value="mean">Mean</option>
+                <option value="median">Median</option>
+                <option value="mode">Mode</option>
+            </select>
+            <input type="text" placeholder="e.g: 2, 5, 8, 17, 13, ..." id="3ms-input">
+            <button id="3ms-calculate">Calculate</button>
+        </section>
+        <section class="three-ms-result">
+            <p id="3ms-des"></p>
+            <div id="3ms-result"></div>
+        </section>
+    </section>
+    <!-- emoji translator -->
+    <!-- <section class="emoji-wrapper">
+        <h4>Below is emoji translator. Write some text in the text input to translate it into emoji's</h4>
+        <section class="emoji-container">
+            <section>
+
+                <div class="label">
+                    <label for="text-input">Your Text</label>
+                </div>
+                <div>
+                    <textarea id="text-input" placeholder=" Write some text or copy-paste some text here"></textarea>
+                </div>
+
+            </section>
+            <section>
+
+                <div class="label">
+                    <label for="emoji-container">Text to Emoji's</label>
+                </div>
+                <div>
+                    <textarea id="emoji-container" readonly class="no-resize"></textarea>
+                </div>
+
+            </section>
+        </section>
+
+    </section> -->
+
+    <!-- keycode finder -->
+    <section class="keycode-wrapper">
+        <h4>You can use the below text box to find the keycode for each key on your keyboard.</h4>
+        <section class="keycode-container">
+            <section>
+
+                <div class="label">
+                    <label for="key-input">Your key text</label>
+                </div>
+                <div>
+                    <textarea id="key-input"
+                        placeholder="....Press any key when you cursor is inside this box..."></textarea>
+                </div>
+            </section>
+            <section>
+                <div class="label">
+                    <label for="keycode-container">Your key code</label>
+                </div>
+                <div>
+                    <textarea id="keycode-container" placeholder="...Key Codes..." readonly
+                        class="no-resize"></textarea>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <!-- Binary to decimal -->
+    <section class="binary-wrapper">
+        <h4>You can use the below text box to convert Binary to Decimal.</h4>
+        <section class="binary-container">
+            <section>
+                <div class="label">
+                    <label for="binary-input">Enter Binary</label>
+                </div>
+                <div>
+                    <textarea id="binary-input" placeholder="Enter a binary number"></textarea>
+                </div>
+            </section>
+            <section>
+                <div class="label">
+                    <label for="decimal-container">Binary to Decimal</label>
+                </div>
+                <div>
+                    <textarea id="decimal-container" placeholder="Binary converted to decimal" readonly
+                        class="no-resize"></textarea>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- Decimal to Binary -->
+    <section class="binary-wrapper">
+        <h4>You can use the below text box to convert Decimal to Binary.</h4>
+        <section class="binary-container">
+            <section>
+                <div class="label">
+                    <label for="decimal-input">Enter Decimal</label>
+                </div>
+                <div>
+                    <textarea id="decimal-input" placeholder="Enter a decimal number"></textarea>
+                </div>
+            </section>
+            <section>
+                <div class="label">
+                    <label for="binary-container">Decimal to Binary</label>
+                </div>
+                <div>
+                    <textarea id="binary-container" placeholder="Decimal converted to binary" readonly
+                        class="no-resize"></textarea>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- section for subscribe -->
+    <section class="EMF-container">
+        <p id="error-feedback"></p>
+    </section>
+    <section class="subscribe-wrapper">
+        <section class="subscribe">
+            <p>
+                SUBSCRIBE NOW
+            </p>
+            <input type="email" placeholder="example@gmail.com" id="userEmail">
+            <button id="subscribe">SUBMIT</button>
+        </section>
+    </section>
+    <!-- footer of the page -->
+    <footer class="footer main-footer"></footer>
+    <!-- load the js files -->
+    <script src="./public/apps/frontEnd.js" type="module"></script>
+    <!-- <script src="./public/apps/emoji-translator.js"></script>
+    <script src="./public/apps/subscribe.js"></script> -->
+</body>
+
+</html>
