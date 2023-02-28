@@ -109,6 +109,49 @@ section.project-sources h2 a {
 	text-decoration: none;
 }
 
+.android-app {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-radius: 2vw;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 300px;
+	height: 300px;
+	box-shadow: 0px 0px 5px 2px rgb(17, 215, 209);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.and-des {
+	padding: 0px 4px;
+	text-align: center;
+	text-shadow: 1px 2px 1px gold;
+	height: inherit;
+}
+
+.and-des p:first-child {
+	font-weight: bold;
+}
+
+
+.hrc {
+	background-image: url('https://aqyanoos.com/images/hrc_icon.png') !important;
+}
+
+.cr {
+	background-image: url('https://aqyanoos.com/images/cw_icon.PNG') !important;
+}
+
+.te {
+	background-image: url('https://aqyanoos.com/images/textEditor_icon.png') !important;
+}
+
+.db {
+	background-image: url('https://aqyanoos.com/images/db_icon.png') !important;
+}
+
 /**
 		media queries
 
