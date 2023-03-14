@@ -5,8 +5,11 @@
 */
 
 article.group-projects {
-	display: grid;
-	grid-template-columns: auto auto auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* display: grid;
+	grid-template-columns: auto auto auto; */
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
@@ -45,6 +48,7 @@ section.direct-project {
 	margin-top: 20px;
 	width: 300px;
 	height: 300px;
+	margin-right: 10px;
 }
 
 section.direct-project:hover {
@@ -112,14 +116,14 @@ section.project-sources h2 a {
 .android-app {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-radius: 2vw;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	width: 300px;
 	height: 300px;
 	box-shadow: 0px 0px 5px 2px rgb(17, 215, 209);
-	background-position: center;
+	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -127,8 +131,11 @@ section.project-sources h2 a {
 .and-des {
 	padding: 0px 4px;
 	text-align: center;
-	text-shadow: 1px 2px 1px gold;
-	height: inherit;
+	height: auto;
+	background-color: #00000046;
+	text-shadow: 0px -2px 1px rgb(7, 191, 247);
+	border-radius: inherit;
+	color: white;
 }
 
 .and-des p:first-child {
