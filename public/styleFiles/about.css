@@ -123,6 +123,9 @@ section.print div:hover {
     section.subscribe-wrapper,
     footer {
         display: none;
+        background-color: transparent;
+        background: transparent;
+        color: transparent;
     }
 
     article.main-article {
