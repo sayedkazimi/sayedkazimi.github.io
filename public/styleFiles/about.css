@@ -128,6 +128,11 @@ section.print div:hover {
         color: transparent;
     }
 
+    header.main-header {
+        background-color: transparent;
+        background: transparent;
+    }
+
     article.main-article {
         display: flex;
         flex-direction: row;
