@@ -128,11 +128,6 @@ section.print div:hover {
         color: transparent;
     }
 
-    header.main-header {
-        background-color: transparent;
-        background: transparent;
-    }
-
     article.main-article {
         display: flex;
         flex-direction: row;
@@ -160,7 +155,7 @@ section.print div:hover {
     }
 
     main {
-        margin-top: -60px;
+        margin-top: -10px;
         width: 210mm;
         height: 297mm;
         z-index: 1000;

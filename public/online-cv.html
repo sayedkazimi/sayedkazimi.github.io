@@ -12,38 +12,24 @@
     <link rel="icon" type="image/ico" href="/favicon .ico">
     <link rel="shortcut icon" type="image/ico" href="/favicon .ico">
     <link rel="stylesheet" href="/public/styleFiles/about.css">
-    <link rel="stylesheet" href="/public/styleFiles/footer.css">
     <link rel="stylesheet" href="/public/styleFiles/sharedCSS.css">
-    <title>About Sayed Khalil Kazimi</title>
+    <title>Online CV</title>
+    <script>
+        function printCV ()
+        {
+            alert("If there is any overflow (texts outside the paper) or any problem with the page layout, please set the paper size to A4 in 'More settings' in print popup window.");
 
+            window.print();
+        }
+
+        setTimeout(printCV, 200);
+    </script>
 </head>
 
 <body>
-    <!-- nav bar -->
-    <section class="nav hideprint">
-        <nav class="main-nav hideprint"></nav>
-    </section>
-
-    <!-- header -->
-    <header class="main-header hideprint">
-        <div class="pContainer hideprint">
-            <p id="welcome-paragraph" class="hideprint">
-                Welcome! If you have any question or if something is not clear on this website, then please contact me
-                via Email, LinkedIn or GitHub. Thank You!
-            </p>
-        </div>
-        <button id="menu"><i class="material-icons hideprint">menu</i></button>
-    </header>
-
-    <!-- menu -->
-    <section class="aside-wrapper hideprint" id="aside-wrapper"></section>
+   
     <!-- main part of the web page -->
-    <main>
-        <section class="print hideprint">
-            <div>
-                <a href="/public/online-cv.html">Print CV</a>
-            </div>
-        </section>
+    <main>        
         <article class="main-article">
             <section class="profile-info">
                 <section class="origin">
@@ -171,16 +157,6 @@
                             <li>Vue.js, LitElement, HTML, CSS/SCSS,...</li>
                             <li>And another web dev tools/Libraries</li>
                         </ul>
-                        <!-- Pishgam -->
-                        <!-- <div class="txt-b forprint">PC-technician (Oct 2008 - Dec 2013)</div>
-                        <div class="txt-small forprint">Pishgam computer repair (Part-time) - Jaghori, Afghanistan
-                        </div>
-                        <ul class="forprint">
-                            <li>Repairing defect pc-hardware</li>
-                            <li>Troubleshooting, upgrading, updating</li>
-                            <li>Taking Back-ups, installing hardware & software</li>
-                            <li>Selling pc, pc-components, software...</li>
-                        </ul> -->
                     </section>
                 </section>
                 <section class="contents first">
@@ -280,23 +256,6 @@
         </article>
     </main>
 
-    <!-- section for subscribe -->
-    <section class="EMF-container">
-        <p id="error-feedback"></p>
-    </section>
-    <section class="subscribe-wrapper">
-        <section class="subscribe">
-            <p>
-                SUBSCRIBE NOW
-            </p>
-            <input type="email" placeholder="example@gmail.com" id="userEmail">
-            <button id="subscribe">SUBMIT</button>
-        </section>
-    </section>
-    <!-- footer of the page -->
-    <footer class="footer main-footer"></footer>
-    <!-- load the js files -->
-    <script src="/public/apps/aside.js"></script>
 </body>
 
 </html>
